@@ -16,11 +16,17 @@ com/kodilla/testing/collection/OddNumbersExterminator.java
  com.kodilla.testing.collection.OddNumbersExterminator
 com/kodilla/testing/shape/ShapeCollector.java
  com.kodilla.testing.shape.ShapeCollector
-com/kodilla/testing/forum/ForumComment.java
- com.kodilla.testing.forum.ForumComment
-com/kodilla/testing/forum/ForumUser.java
- com.kodilla.testing.forum.ForumUser
-com/kodilla/testing/forum/ForumPost.java
- com.kodilla.testing.forum.ForumPost
 com/kodilla/testing/weather/stub/WeatherForecast.java
  com.kodilla.testing.weather.stub.WeatherForecast
+com/kodilla/testing/library/LibraryUser.java
+ com.kodilla.testing.library.LibraryUser
+com/kodilla/testing/library/Book.java
+ com.kodilla.testing.library.Book
+com/kodilla/testing/library/LibraryDatabase.java
+ com.kodilla.testing.library.LibraryDatabase
+com/kodilla/testing/library/BookLibrary.java
+ com.kodilla.testing.library.BookLibrary
+com/kodilla/testing/statistics/Statistics.java
+ com.kodilla.testing.statistics.Statistics
+com/kodilla/testing/statistics/StatisticsPresentation.java
+ com.kodilla.testing.statistics.StatisticsPresentation
