@@ -65,14 +65,20 @@ public class ShapeCollectorTestSuite {
 
         @Test
         public void testShowFigures(){
-            List<String> shapes = new ArrayList<>();
+            List<Shape> shapes = new ArrayList<>();
             Square square = new Square(5);
+            Circle circle = new Circle(5);
+            Triangle triangle = new Triangle(5,3);
             ShapeCollector collector = new ShapeCollector();
+            shapes.add(square);
+            shapes.add(circle);
+            shapes.add(triangle);
             collector.addFigure(square);
-            shapes.add(square.toString());
+            collector.addFigure(circle);
+            collector.addFigure(triangle);
 
-            String expected = shapes.toString();
-            String result = collector.showFigure();
+            List<Shape> expected = shapes;
+            List<Shape> result = collector.showFigure();
 
             Assertions.assertEquals(expected, result);
         }
@@ -119,12 +125,20 @@ public class ShapeCollectorTestSuite {
 
         @Test
         public void testShowFigures(){
-            Triangle triangle = new Triangle(5, 3);
+            List<Shape> shapes = new ArrayList<>();
+            Square square = new Square(5);
+            Circle circle = new Circle(5);
+            Triangle triangle = new Triangle(5,3);
             ShapeCollector collector = new ShapeCollector();
+            shapes.add(square);
+            shapes.add(circle);
+            shapes.add(triangle);
+            collector.addFigure(square);
+            collector.addFigure(circle);
             collector.addFigure(triangle);
 
-            String expected = triangle.toString();
-            String result = collector.showFigure();
+            List<Shape> expected = shapes;
+            List<Shape> result = collector.showFigure();
 
             Assertions.assertEquals(expected, result);
         }
@@ -171,12 +185,20 @@ public class ShapeCollectorTestSuite {
 
         @Test
         public void testShowFigures(){
-            Circle circle = new Circle(10);
+            List<Shape> shapes = new ArrayList<>();
+            Square square = new Square(5);
+            Circle circle = new Circle(5);
+            Triangle triangle = new Triangle(5,3);
             ShapeCollector collector = new ShapeCollector();
+            shapes.add(square);
+            shapes.add(circle);
+            shapes.add(triangle);
+            collector.addFigure(square);
             collector.addFigure(circle);
+            collector.addFigure(triangle);
 
-            String expected = circle.toString();
-            String result = collector.showFigure();
+            List<Shape> expected = shapes;
+            List<Shape> result = collector.showFigure();
 
             Assertions.assertEquals(expected, result);
         }

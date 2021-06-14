@@ -27,8 +27,8 @@ public class ShapeCollector {
         return result;
     }
 
-    public String showFigure(){
-        return shapes.toString();
+    public List<Shape> showFigure(){
+        return shapes;
     }
 
 }
