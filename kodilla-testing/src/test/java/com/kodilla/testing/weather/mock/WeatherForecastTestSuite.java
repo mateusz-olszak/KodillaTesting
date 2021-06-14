@@ -66,7 +66,7 @@ public class WeatherForecastTestSuite {
         temperaturesMap.put("Wroclaw", 10.0);
         temperaturesMap.put("Warszawa", 10.0);
         temperaturesMap.put("Gdansk", 10.0);
-        when(temperaturesMock.getAverageTemperature()).thenReturn(temperaturesMap);
+        when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
 
         double averageTemperature = weatherForecast.calculateAverageTemperature();
@@ -82,7 +82,7 @@ public class WeatherForecastTestSuite {
         temperaturesMap.put("Wroclaw", 50.0);
         temperaturesMap.put("Warszawa", 10.0);
 //        temperaturesMap.put("Gdansk", 20.0);
-        when(temperaturesMock.getMedianTemperature()).thenReturn(temperaturesMap);
+        when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap);
         WeatherForecast weatherForecast = new WeatherForecast(temperaturesMock);
 
         double medianTemperature = weatherForecast.calculateMedianTemperature();

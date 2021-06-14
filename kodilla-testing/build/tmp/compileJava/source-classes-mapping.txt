@@ -1,5 +1,5 @@
-com/kodilla/testing/weather/stub/Temperatures.java
- com.kodilla.testing.weather.stub.Temperatures
+com/kodilla/testing/shape/ShapeCollector.java
+ com.kodilla.testing.shape.ShapeCollector
 com/kodilla/testing/shape/Shape.java
  com.kodilla.testing.shape.Shape
 com/kodilla/testing/shape/Triangle.java
@@ -16,8 +16,8 @@ com/kodilla/testing/collection/OddNumbersExterminator.java
  com.kodilla.testing.collection.OddNumbersExterminator
 com/kodilla/testing/statistics/StatisticsPresentation.java
  com.kodilla.testing.statistics.StatisticsPresentation
-com/kodilla/testing/weather/stub/WeatherForecast.java
- com.kodilla.testing.weather.stub.WeatherForecast
+com/kodilla/testing/statistics/Statistics.java
+ com.kodilla.testing.statistics.Statistics
 com/kodilla/testing/library/LibraryUser.java
  com.kodilla.testing.library.LibraryUser
 com/kodilla/testing/library/Book.java
@@ -26,7 +26,7 @@ com/kodilla/testing/library/LibraryDatabase.java
  com.kodilla.testing.library.LibraryDatabase
 com/kodilla/testing/library/BookLibrary.java
  com.kodilla.testing.library.BookLibrary
-com/kodilla/testing/statistics/Statistics.java
- com.kodilla.testing.statistics.Statistics
-com/kodilla/testing/shape/ShapeCollector.java
- com.kodilla.testing.shape.ShapeCollector
+com/kodilla/testing/weather/stub/Temperatures.java
+ com.kodilla.testing.weather.stub.Temperatures
+com/kodilla/testing/weather/stub/WeatherForecast.java
+ com.kodilla.testing.weather.stub.WeatherForecast

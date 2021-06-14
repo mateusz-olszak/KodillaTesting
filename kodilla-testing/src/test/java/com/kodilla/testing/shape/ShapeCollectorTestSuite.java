@@ -60,7 +60,7 @@ public class ShapeCollectorTestSuite {
 
             boolean removeFigure = collector.removeFigure(square);
 
-            Assertions.assertFalse(removeFigure);
+            Assertions.assertTrue(removeFigure);
         }
 
         @Test

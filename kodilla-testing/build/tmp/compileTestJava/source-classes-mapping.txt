@@ -4,14 +4,14 @@ com/kodilla/testing/collection/CollectionTestSuite.java
  com.kodilla.testing.collection.CollectionTestSuite
 com/kodilla/testing/weather/stub/TemperaturesStub.java
  com.kodilla.testing.weather.stub.TemperaturesStub
-com/kodilla/testing/weather/mock/WeatherForecastTestSuite.java
- com.kodilla.testing.weather.mock.WeatherForecastTestSuite
-com/kodilla/testing/library/BookDirectoryTestSuite.java
- com.kodilla.testing.library.BookDirectoryTestSuite
-com/kodilla/testing/statistics/StatisticsPresentationTestSuite.java
- com.kodilla.testing.statistics.StatisticsPresentationTestSuite
 com/kodilla/testing/shape/ShapeCollectorTestSuite.java
  com.kodilla.testing.shape.ShapeCollectorTestSuite
  com.kodilla.testing.shape.ShapeCollectorTestSuite$CircleTests
  com.kodilla.testing.shape.ShapeCollectorTestSuite$SquareTests
  com.kodilla.testing.shape.ShapeCollectorTestSuite$TriangleTests
+com/kodilla/testing/library/BookDirectoryTestSuite.java
+ com.kodilla.testing.library.BookDirectoryTestSuite
+com/kodilla/testing/statistics/StatisticsPresentationTestSuite.java
+ com.kodilla.testing.statistics.StatisticsPresentationTestSuite
+com/kodilla/testing/weather/mock/WeatherForecastTestSuite.java
+ com.kodilla.testing.weather.mock.WeatherForecastTestSuite

@@ -23,19 +23,19 @@ public class WeatherForecast {
     public double calculateAverageTemperature(){
         double sum=0;
 
-        for (Map.Entry<String, Double> temperature : temperatures.getAverageTemperature().entrySet()){
+        for (Map.Entry<String, Double> temperature : temperatures.getTemperatures().entrySet()){
             sum += temperature.getValue();
         }
 
-        return sum/temperatures.getAverageTemperature().size();
+        return sum/temperatures.getTemperatures().size();
     }
 
     public double calculateMedianTemperature(){
-        double[] temps = new double[temperatures.getMedianTemperature().size()];
+        double[] temps = new double[temperatures.getTemperatures().size()];
         double median;
         int i=0;
 
-        for (Map.Entry<String, Double> temperature : temperatures.getMedianTemperature().entrySet()){
+        for (Map.Entry<String, Double> temperature : temperatures.getTemperatures().entrySet()){
             temps[i] = temperature.getValue();
             i++;
         }
