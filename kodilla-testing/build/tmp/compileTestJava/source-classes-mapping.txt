@@ -9,9 +9,9 @@ com/kodilla/testing/shape/ShapeCollectorTestSuite.java
  com.kodilla.testing.shape.ShapeCollectorTestSuite$CircleTests
  com.kodilla.testing.shape.ShapeCollectorTestSuite$SquareTests
  com.kodilla.testing.shape.ShapeCollectorTestSuite$TriangleTests
-com/kodilla/testing/library/BookDirectoryTestSuite.java
- com.kodilla.testing.library.BookDirectoryTestSuite
-com/kodilla/testing/statistics/StatisticsPresentationTestSuite.java
- com.kodilla.testing.statistics.StatisticsPresentationTestSuite
 com/kodilla/testing/weather/mock/WeatherForecastTestSuite.java
  com.kodilla.testing.weather.mock.WeatherForecastTestSuite
+com/kodilla/testing/statistics/StatisticsPresentationTestSuite.java
+ com.kodilla.testing.statistics.StatisticsPresentationTestSuite
+com/kodilla/testing/library/BookDirectoryTestSuite.java
+ com.kodilla.testing.library.BookDirectoryTestSuite

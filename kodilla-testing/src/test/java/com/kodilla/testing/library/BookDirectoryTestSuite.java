@@ -95,10 +95,7 @@ public class BookDirectoryTestSuite {
     void testListBooksInHandsOfOneBook(){
         BookLibrary bookLibrary = new BookLibrary(libraryDatabase);
         LibraryUser user = new LibraryUser("Mateusz", "Olszak", "2134243213");
-        Book book1 = new Book("Secrets of Alamo", "John Smith", 2008);                   // [5]
-        List<Book> books = new ArrayList<>();
-        books.add(book1);
-        Mockito.when(libraryDatabase.listBooksInHandsOff(user)).thenReturn(books);
+        Mockito.when(libraryDatabase.listBooksInHandsOff(user)).thenReturn(generateListOfNBooks(1));
 
         List<Book> resultList = bookLibrary.listBooksInHandsOff(user);
 
@@ -109,14 +106,7 @@ public class BookDirectoryTestSuite {
     void testListBooksInHandsOfFiveBooks(){
         BookLibrary bookLibrary = new BookLibrary(libraryDatabase);
         LibraryUser user = new LibraryUser("Mateusz", "Olszak", "2134243213");
-        Book book1 = new Book("Secrets of Alamo", "John Smith", 2);
-        List<Book> books = new ArrayList<>();
-        books.add(book1);
-        books.add(book1);
-        books.add(book1);
-        books.add(book1);
-        books.add(book1);
-        Mockito.when(libraryDatabase.listBooksInHandsOff(user)).thenReturn(books);
+        Mockito.when(libraryDatabase.listBooksInHandsOff(user)).thenReturn(generateListOfNBooks(5));
 
         List<Book> resultList = bookLibrary.listBooksInHandsOff(user);
 

@@ -27,13 +27,7 @@ public class BookLibrary {
     }
 
     public List<Book> listBooksInHandsOff(LibraryUser libraryUser){
-        List<Book> bookList = new ArrayList<>();
-
-        for(Book book : libraryDatabase.listBooksInHandsOff(libraryUser)){
-            bookList.add(book);
-        }
-
-        return bookList;
+        return libraryDatabase.listBooksInHandsOff(libraryUser);
     }
 
 }
