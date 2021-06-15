@@ -1,21 +1,13 @@
 package com.kodilla.testing.statistics;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class StatisticsPresentation {
 
-    private List<String> users = new ArrayList<>();
-    private int postsQuantity;
-    private int commentsQuantity;
+    private Statistics statistics;
 
     public void calculateAdvStatistics(Statistics statistics){
-        for (String username : statistics.usersNames()){
-            users.add(username);
-        }
-
-        postsQuantity = statistics.postsCount();
-        commentsQuantity = statistics.commentsCount();
+        this.statistics = statistics;
     }
 
     public String showStatistics(){
@@ -25,30 +17,30 @@ public class StatisticsPresentation {
 
 
     public List<String> getUsers() {
-        return users;
+        return statistics.usersNames();
     }
 
     public int getPostsQuantity() {
-        return postsQuantity;
+        return statistics.postsCount();
     }
 
     public int getCommentsQuantity() {
-        return commentsQuantity;
+        return statistics.commentsCount();
     }
 
     public double getAveragePostsPerUser() {
-        return (double) postsQuantity/(double) users.size();
+        return (double) statistics.postsCount()/(double) statistics.usersNames().size();
     }
 
     public double getAverageCommentsPerUser() {
-        return (double) commentsQuantity/(double) users.size();
+        return (double) statistics.commentsCount()/(double) statistics.usersNames().size();
     }
 
     public double getAverageCommentsPerPost() {
-        if (commentsQuantity > postsQuantity)
-            return commentsQuantity/postsQuantity;
+        if (statistics.commentsCount() > statistics.postsCount())
+            return statistics.commentsCount()/statistics.postsCount();
         else {
-            return  (double) commentsQuantity/(double)postsQuantity;
+            return  (double) statistics.commentsCount()/(double)statistics.postsCount();
         }
     }
 }
