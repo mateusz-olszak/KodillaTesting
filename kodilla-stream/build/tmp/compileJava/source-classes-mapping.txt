@@ -44,14 +44,14 @@ com/kodilla/stream/invoice/simple/SimpleProduct.java
  com.kodilla.stream.invoice.simple.SimpleProduct
 com/kodilla/stream/sand/SandStorage.java
  com.kodilla.stream.sand.SandStorage
-com/kodilla/stream/sand/Europe.java
- com.kodilla.stream.sand.Europe
+com/kodilla/stream/StreamMain.java
+ com.kodilla.stream.StreamMain
 com/kodilla/stream/sand/Africa.java
  com.kodilla.stream.sand.Africa
 com/kodilla/stream/world/Germany.java
  com.kodilla.stream.world.Germany
-com/kodilla/stream/StreamMain.java
- com.kodilla.stream.StreamMain
+com/kodilla/stream/world/Country.java
+ com.kodilla.stream.world.Country
 com/kodilla/stream/world/Poland.java
  com.kodilla.stream.world.Poland
 com/kodilla/stream/world/Continent.java
@@ -60,5 +60,7 @@ com/kodilla/stream/world/France.java
  com.kodilla.stream.world.France
 com/kodilla/stream/world/World.java
  com.kodilla.stream.world.World
-com/kodilla/stream/world/Country.java
- com.kodilla.stream.world.Country
+com/kodilla/stream/sand/Europe.java
+ com.kodilla.stream.sand.Europe
+com/kodilla/stream/array/ArrayOperations.java
+ com.kodilla.stream.array.ArrayOperations

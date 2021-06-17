@@ -1,6 +1,5 @@
 package com.kodilla.stream.sand;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -12,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SandStorageTestSuite {
 
     @Test
-    void testGetSandBeansQuantity() {
+    public void testGetSandBeansQuantity() {
         //Given
         List<SandStorage> continents = new ArrayList<>();
         continents.add(new Europe());
@@ -31,13 +30,13 @@ public class SandStorageTestSuite {
     }
 
     @Test
-    public void testGetSandBeansQuantityWtihReduce(){
-        List<SandStorage> continets = new ArrayList<>();
-        continets.add(new Europe());
-        continets.add(new Africa());
-        continets.add(new Asia());
+    public void testGetSandBeansQuantityWithReduce(){
+        List<SandStorage> continents = new ArrayList<>();
+        continents.add(new Europe());
+        continents.add(new Africa());
+        continents.add(new Asia());
 
-        BigDecimal totalSand = continets.stream()
+        BigDecimal totalSand = continents.stream()
                 .map(SandStorage::getSandBeansQuantity)
                 .reduce(BigDecimal.ZERO, (sum, current) -> sum = sum.add(current));
 
