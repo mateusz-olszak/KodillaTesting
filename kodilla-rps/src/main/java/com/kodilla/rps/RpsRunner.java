@@ -7,11 +7,11 @@ public class RpsRunner {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter your name: ");
         String name = input.nextLine();
-        System.out.println("\nHow many rounds you want to play: ");
+        System.out.println("How many rounds you want to play: ");
         int winRounds = input.nextInt();
 
-        User user = new User(name);
-        Game game = new Game(user, winRounds);
+        Game game = new Game(new User(name), winRounds);
+
         boolean end = false;
         boolean restart;
 
@@ -19,13 +19,12 @@ public class RpsRunner {
             game.play();
             restart = game.restartGame();
             if (restart) {
-                System.out.print("Please enter your name1: ");
-                name = input.nextLine();
+                System.out.print("Please enter your name: ");
                 input.nextLine();
-                System.out.println("\nHow many rounds you want to play: ");
+                name = input.nextLine();
+                System.out.print("How many rounds you want to play: ");
                 winRounds = input.nextInt();
-                user = new User(name);
-                game = new Game(user, winRounds);
+                game = new Game(new User(name), winRounds);
                 game.play();
             }
             if (game.endGame()) end = true;

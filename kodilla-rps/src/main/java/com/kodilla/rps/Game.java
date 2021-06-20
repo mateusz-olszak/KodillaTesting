@@ -5,10 +5,10 @@ public class Game extends GameState{
 
     private final User user;
     private final Computer computer;
+    private final int winRounds;
     private CHOICES playerChoice;
     private CHOICES computerChoice;
     private RESULT result;
-    private final int winRounds;
     private int wins;
     private int loses;
     private int ties;
@@ -19,7 +19,7 @@ public class Game extends GameState{
 
     public Game(final User user, final int winRounds) {
         this.user = user;
-        this.computer = new Computer();
+        this.computer = new Computer(user);
         this.winRounds = winRounds;
     }
 
@@ -43,7 +43,7 @@ public class Game extends GameState{
         System.out.println("You have played " + (wins+loses+ties) + " times");
         System.out.println("Player " + user.getUsername() + " has won " + wins + " times");
         System.out.println("You have lost " + loses + " times");
-        System.out.println("The tie was " + ties + " times");
+        System.out.println("The tie was " + ties + (ties == 1 ? " time" : " times"));
     }
 
     private void stats(){
@@ -70,81 +70,84 @@ public class Game extends GameState{
     }
 
     private RESULT getResult(){
-        if (playerChoice == computerChoice)
-            return RESULT.TIE;
+        if (playerChoice == computerChoice) return RESULT.TIE;
         switch (playerChoice){
             case ROCK:
-                if (computerChoice == CHOICES.SCISSORS){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else if (computerChoice == CHOICES.PAPER){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else if (computerChoice == CHOICES.SPOCK){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else {
-                    playerWin++;
-                    return RESULT.WIN;
-                }
+                return rockAndScissorsCase(CHOICES.SCISSORS, CHOICES.PAPER);
             case PAPER:
-                if (computerChoice == CHOICES.ROCK){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else if (computerChoice == CHOICES.SCISSORS){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else if (computerChoice == CHOICES.SPOCK){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else {
-                    computerWin++;
-                    return RESULT.LOSE;
-                }
+                return paperCase();
             case SCISSORS:
-                if (computerChoice == CHOICES.PAPER){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else if (computerChoice == CHOICES.ROCK){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else if (computerChoice == CHOICES.SPOCK){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else{
-                    playerWin++;
-                    return RESULT.WIN;
-                }
+                return rockAndScissorsCase(CHOICES.PAPER, CHOICES.ROCK);
             case SPOCK:
-                if (computerChoice == CHOICES.PAPER){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else if (computerChoice == CHOICES.ROCK){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else if (computerChoice == CHOICES.SCISSORS){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else{
-                    computerWin++;
-                    return RESULT.LOSE;
-                }
+                return spockCase();
             case LIZARD:
-                if (computerChoice == CHOICES.PAPER){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else if (computerChoice == CHOICES.ROCK){
-                    playerWin++;
-                    return RESULT.WIN;
-                }else if (computerChoice == CHOICES.SCISSORS){
-                    computerWin++;
-                    return RESULT.LOSE;
-                }else{
-                    computerWin++;
-                    return RESULT.LOSE;
-                }
+                return lizardCase();
         }
         return null;
+    }
+
+    private RESULT lizardCase() {
+        if (computerChoice == CHOICES.PAPER){
+            playerWin++;
+            return RESULT.WIN;
+        }else if (computerChoice == CHOICES.ROCK){
+            playerWin++;
+            return RESULT.WIN;
+        }else if (computerChoice == CHOICES.SCISSORS){
+            computerWin++;
+            return RESULT.LOSE;
+        }else{
+            computerWin++;
+            return RESULT.LOSE;
+        }
+    }
+
+    private RESULT spockCase() {
+        if (computerChoice == CHOICES.PAPER){
+            computerWin++;
+            return RESULT.LOSE;
+        }else if (computerChoice == CHOICES.ROCK){
+            playerWin++;
+            return RESULT.WIN;
+        }else if (computerChoice == CHOICES.SCISSORS){
+            playerWin++;
+            return RESULT.WIN;
+        }else{
+            computerWin++;
+            return RESULT.LOSE;
+        }
+    }
+
+    private RESULT paperCase() {
+        if (computerChoice == CHOICES.ROCK){
+            playerWin++;
+            return RESULT.WIN;
+        }else if (computerChoice == CHOICES.SCISSORS){
+            computerWin++;
+            return RESULT.LOSE;
+        }else if (computerChoice == CHOICES.SPOCK){
+            playerWin++;
+            return RESULT.WIN;
+        }else {
+            computerWin++;
+            return RESULT.LOSE;
+        }
+    }
+
+    private RESULT rockAndScissorsCase(CHOICES scissors, CHOICES paper) {
+        if (computerChoice == scissors) {
+            playerWin++;
+            return RESULT.WIN;
+        } else if (computerChoice == paper) {
+            computerWin++;
+            return RESULT.LOSE;
+        } else if (computerChoice == CHOICES.SPOCK) {
+            computerWin++;
+            return RESULT.LOSE;
+        } else {
+            playerWin++;
+            return RESULT.WIN;
+        }
     }
 
     public int getWinner() {
