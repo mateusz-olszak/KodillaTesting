@@ -2,10 +2,10 @@ package com.kodilla.rps;
 
 import java.util.Scanner;
 
-public class User extends GameState {
+public class User{
 
     private String username;
-    private CHOICES figure;
+    private Choice figure;
 
     public User(final String username) {
         this.username = username;
@@ -15,43 +15,43 @@ public class User extends GameState {
         return username;
     }
 
-    public CHOICES getChoice(){
+    public Choice getChoice(){
         Scanner input = new Scanner(System.in);
         System.out.print("Choose your figure:\n[1] ROCK | [2] PAPER | [3] SCISSORS | [4] SPOCK | [5] LIZARD" +
                 "\n[x] END GAME | [n] RESTART GAME: ");
         char choice = input.nextLine().toUpperCase().charAt(0);
         switch (choice){
             case '1':
-                figure = CHOICES.ROCK;
-                return CHOICES.ROCK;
+                figure = Choice.ROCK;
+                return Choice.ROCK;
             case '2':
-                figure = CHOICES.PAPER;
-                return CHOICES.PAPER;
+                figure = Choice.PAPER;
+                return Choice.PAPER;
             case '3':
-                figure = CHOICES.SCISSORS;
-                return CHOICES.SCISSORS;
+                figure = Choice.SCISSORS;
+                return Choice.SCISSORS;
             case '4':
-                figure = CHOICES.SPOCK;
-                return CHOICES.SPOCK;
+                figure = Choice.SPOCK;
+                return Choice.SPOCK;
             case '5':
-                figure = CHOICES.LIZARD;
-                return CHOICES.LIZARD;
+                figure = Choice.LIZARD;
+                return Choice.LIZARD;
             case 'X':
                 System.out.print("Are you sure you want to end the game ? [y] yes | [n] no: ");
                 choice = input.nextLine().charAt(0);
-                if (choice == 'y') return CHOICES.END;
+                if (choice == 'y') return Choice.END;
                 break;
             case 'N':
                 System.out.print("Are you sure you want to restart the game ? [y] yes | [n] no: ");
                 choice = input.nextLine().charAt(0);
-                if (choice == 'y') return CHOICES.RESTART;
+                if (choice == 'y') return Choice.RESTART;
                 break;
         }
 
         return getChoice();
     }
 
-    public CHOICES getFigure(){
+    public Choice getFigure(){
         return figure;
     }
 }
