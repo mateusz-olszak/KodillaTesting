@@ -1,0 +1,4 @@
+com/kodilla/exception/io/FileReaderTestSuite.java
+ com.kodilla.exception.io.FileReaderTestSuite
+com/kodilla/exception/test/SecondChallengeTestSuite.java
+ com.kodilla.exception.test.SecondChallengeTestSuite

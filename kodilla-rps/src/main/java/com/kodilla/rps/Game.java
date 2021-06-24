@@ -7,14 +7,13 @@ public class Game{
     private final int winRounds;
     private Choice playerChoice;
     private Choice computerChoice;
-    private Result result;
-    private int wins;
-    private int loses;
-    private int ties;
     private boolean endGame = false;
     private boolean restartGame = false;
     private int playerWin=0;
     private int computerWin=0;
+    private int wins=0;
+    private int loses=0;
+    private int ties=0;
 
     public Game(final User user, final int winRounds) {
         this.user = user;
@@ -23,18 +22,31 @@ public class Game{
     }
 
     public void play(){
+        Result result;
+        result = getResult();
         playerChoice = user.getChoice();
-        if (playerChoice == Choice.END) endGame = true;
+        stats(result);
+
+        if (playerChoice == Choice.END){
+            endGame = true;
+            displayStats();
+        }else if (playerWin == winRounds) {
+            displayResults(result);
+            displayStats();
+            endGame = true;
+        }else if (computerWin == winRounds) {
+            displayResults(result);
+            displayStats();
+            endGame = true;
+        }
         else if (playerChoice == Choice.RESTART){
             restartGame = true;
+            stats(result);
             displayStats();
-            stats();
         }
         else{
             computerChoice = computer.getChoice();
-            result = getResult();
-            displayResults();
-            stats();
+            displayResults(result);
         }
     }
 
@@ -45,7 +57,7 @@ public class Game{
         System.out.println("The tie was " + ties + (ties == 1 ? " time" : " times"));
     }
 
-    private void stats(){
+    private void stats(Result result){
         if (result == Result.WIN)
             wins++;
         else if (result == Result.LOSE)
@@ -54,7 +66,7 @@ public class Game{
             ties++;
     }
 
-    private void displayResults(){
+    private void displayResults(Result result){
         switch (result){
             case WIN:
                 System.out.println(playerChoice + " beats " + computerChoice + ". Player wins");
@@ -126,7 +138,7 @@ public class Game{
             return Result.LOSE;
         }else if (computerChoice == Choice.SPOCK){
             playerWin++;
-            return Result.WIN;
+            return Result.LOSE;
         }else {
             computerWin++;
             return Result.LOSE;
@@ -150,11 +162,11 @@ public class Game{
     }
 
     public boolean getWinner() {
-        if (playerWin == winRounds)
-            return true;
-        else if (computerWin == winRounds)
-            return true;
-        else if (endGame)
+//        if (playerWin == winRounds)
+//            return true;
+//        else if (computerWin == winRounds)
+//            return true;
+        if (endGame)
             return true;
         else return false;
     }

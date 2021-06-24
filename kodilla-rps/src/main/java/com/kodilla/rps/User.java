@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class User{
 
-    private String username;
+    private final String username;
     private Choice figure;
 
     public User(final String username) {

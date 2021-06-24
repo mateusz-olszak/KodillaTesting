@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.exception.test.SecondChallengeTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-24T09:43:07" hostname="MacBook-Pro-Mateusz.local" time="0.037">
+  <properties/>
+  <testcase name="testProbablyIWillThrowException()" classname="com.kodilla.exception.test.SecondChallengeTestSuite" time="0.037"/>
+  <system-out><![CDATA[Iam always here
+Iam always here
+Iam always here
+Iam always here
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

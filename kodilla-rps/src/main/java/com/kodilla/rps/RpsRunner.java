@@ -28,6 +28,6 @@ public class RpsRunner {
             if (game.getWinner()) end=true;
         }
 
-        game.displayStats();
+//        game.displayStats();
     }
 }

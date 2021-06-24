@@ -1,11 +1,11 @@
-com/kodilla/rps/Computer.java
- com.kodilla.rps.Computer
-com/kodilla/rps/Result.java
- com.kodilla.rps.Result
-com/kodilla/rps/User.java
- com.kodilla.rps.User
 com/kodilla/rps/Choice.java
  com.kodilla.rps.Choice
+com/kodilla/rps/Result.java
+ com.kodilla.rps.Result
+com/kodilla/rps/Computer.java
+ com.kodilla.rps.Computer
+com/kodilla/rps/User.java
+ com.kodilla.rps.User
 com/kodilla/rps/RpsRunner.java
  com.kodilla.rps.RpsRunner
 com/kodilla/rps/Game.java
