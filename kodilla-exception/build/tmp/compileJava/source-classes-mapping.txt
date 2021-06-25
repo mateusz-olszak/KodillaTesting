@@ -1,14 +1,34 @@
-com/kodilla/exception/main/ExceptionModuleRunner.java
- com.kodilla.exception.main.ExceptionModuleRunner
-com/kodilla/exception/io/FileReaderException.java
- com.kodilla.exception.io.FileReaderException
+com/kodilla/exception/nullpointer/MessageSender.java
+ com.kodilla.exception.nullpointer.MessageSender
+com/kodilla/exception/index/VideoCollector.java
+ com.kodilla.exception.index.VideoCollector
+com/kodilla/exception/test/RouteNotFoundException.java
+ com.kodilla.exception.test.RouteNotFoundException
+com/kodilla/exception/nullpointer/NullPointerExceptionRunner.java
+ com.kodilla.exception.nullpointer.NullPointerExceptionRunner
+com/kodilla/exception/index/IndexExceptionRunner.java
+ com.kodilla.exception.index.IndexExceptionRunner
 com/kodilla/exception/io/FileReaderWithoutHandling.java
  com.kodilla.exception.io.FileReaderWithoutHandling
+com/kodilla/exception/nullpointer/OptionalExample.java
+ com.kodilla.exception.nullpointer.OptionalExample
 com/kodilla/exception/test/FirstChallenge.java
  com.kodilla.exception.test.FirstChallenge
-com/kodilla/exception/io/FileReader.java
- com.kodilla.exception.io.FileReader
-com/kodilla/exception/test/SecondChallenge.java
- com.kodilla.exception.test.SecondChallenge
+com/kodilla/exception/nullpointer/MessageNotSentException.java
+ com.kodilla.exception.nullpointer.MessageNotSentException
 com/kodilla/exception/test/ExceptionHandling.java
  com.kodilla.exception.test.ExceptionHandling
+com/kodilla/exception/test/SecondChallenge.java
+ com.kodilla.exception.test.SecondChallenge
+com/kodilla/exception/nullpointer/User.java
+ com.kodilla.exception.nullpointer.User
+com/kodilla/exception/test/Flight.java
+ com.kodilla.exception.test.Flight
+com/kodilla/exception/io/FileReader.java
+ com.kodilla.exception.io.FileReader
+com/kodilla/exception/io/FileReaderException.java
+ com.kodilla.exception.io.FileReaderException
+com/kodilla/exception/test/FlightFinder.java
+ com.kodilla.exception.test.FlightFinder
+com/kodilla/exception/main/ExceptionModuleRunner.java
+ com.kodilla.exception.main.ExceptionModuleRunner
