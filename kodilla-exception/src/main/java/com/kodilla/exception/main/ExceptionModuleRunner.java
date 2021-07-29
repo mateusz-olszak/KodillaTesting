@@ -9,17 +9,22 @@ import com.kodilla.exception.test.FlightFinder;
 import com.kodilla.exception.test.RouteNotFoundException;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class ExceptionModuleRunner {
     public static void main(String[] args){
 //        taskModule8_3();
 
         ///// task module 8.4:
-        Flight flight = new Flight("Warsaw Airport", "Belgium Airport");
+        Flight flight = null;
         FlightFinder flightFinder = new FlightFinder();
 
+        Optional<Flight> optionalFlight = Optional.ofNullable(flight);
+
+        Flight enabledFlight = optionalFlight.orElse(new Flight("null", "null"));
+
         try {
-            System.out.println(flightFinder.findFlight(flight));
+            System.out.println(flightFinder.findFlight(enabledFlight));
         }catch (RouteNotFoundException e){
             System.out.println("This airport is unreachable. " + e.getMessage());
         }
