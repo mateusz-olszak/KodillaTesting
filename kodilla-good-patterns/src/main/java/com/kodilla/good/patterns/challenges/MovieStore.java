@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class MovieStore {
-    public Map<String, List<String>> getMovies() {
+    private Map<String, List<String>> getMovies() {
         List<String> ironManTranslations = new ArrayList<>();
         ironManTranslations.add("Żelazny Człowiek");
         ironManTranslations.add("Iron Man");
@@ -30,7 +30,7 @@ public class MovieStore {
     public void printMovies(){
 
         String mStr = getMovies().values().stream()
-                .map(l -> l.get(0) + ">" + l.get(1))
+                .map(l -> String.join(">", l))
                 .collect(Collectors.joining("|"));
 
         System.out.println(mStr);

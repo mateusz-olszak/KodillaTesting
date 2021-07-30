@@ -1,4 +1,30 @@
-com/kodilla/good/patterns/challenges/MainSolid.java
- com.kodilla.good.patterns.challenges.MainSolid
 com/kodilla/good/patterns/challenges/MovieStore.java
  com.kodilla.good.patterns.challenges.MovieStore
+com/kodilla/good/patterns/challenges/data/Category.java
+ com.kodilla.good.patterns.challenges.data.Category
+com/kodilla/good/patterns/challenges/data/Product.java
+ com.kodilla.good.patterns.challenges.data.Product
+com/kodilla/good/patterns/challenges/data/OrderDao.java
+ com.kodilla.good.patterns.challenges.data.OrderDao
+com/kodilla/good/patterns/challenges/service/InformationService.java
+ com.kodilla.good.patterns.challenges.service.InformationService
+com/kodilla/good/patterns/challenges/repository/MailRepository.java
+ com.kodilla.good.patterns.challenges.repository.MailRepository
+com/kodilla/good/patterns/challenges/repository/OrderDaoRepository.java
+ com.kodilla.good.patterns.challenges.repository.OrderDaoRepository
+com/kodilla/good/patterns/challenges/service/DataRetrieverService.java
+ com.kodilla.good.patterns.challenges.service.DataRetrieverService
+com/kodilla/good/patterns/challenges/data/OrderRequest.java
+ com.kodilla.good.patterns.challenges.data.OrderRequest
+com/kodilla/good/patterns/challenges/data/OrderDto.java
+ com.kodilla.good.patterns.challenges.data.OrderDto
+com/kodilla/good/patterns/challenges/data/User.java
+ com.kodilla.good.patterns.challenges.data.User
+com/kodilla/good/patterns/challenges/MainSolid.java
+ com.kodilla.good.patterns.challenges.MainSolid
+com/kodilla/good/patterns/challenges/service/ProductOrderService.java
+ com.kodilla.good.patterns.challenges.service.ProductOrderService
+com/kodilla/good/patterns/challenges/service/OrderService.java
+ com.kodilla.good.patterns.challenges.service.OrderService
+com/kodilla/good/patterns/challenges/repository/OrderRepository.java
+ com.kodilla.good.patterns.challenges.repository.OrderRepository
