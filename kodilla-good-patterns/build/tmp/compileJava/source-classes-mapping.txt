@@ -48,9 +48,25 @@ com/kodilla/good/patterns/challenges/taskthree/repository/InformationService.jav
  com.kodilla.good.patterns.challenges.taskthree.repository.InformationService
 com/kodilla/good/patterns/challenges/taskthree/service/DataRetrieverService.java
  com.kodilla.good.patterns.challenges.taskthree.service.DataRetrieverService
-com/kodilla/good/patterns/challenges/taskthree/service/OrderProcessService.java
- com.kodilla.good.patterns.challenges.taskthree.service.OrderProcessService
-com/kodilla/good/patterns/challenges/MainSolid.java
- com.kodilla.good.patterns.challenges.MainSolid
 com/kodilla/good/patterns/challenges/taskthree/data/SupplierDto.java
  com.kodilla.good.patterns.challenges.taskthree.data.SupplierDto
+com/kodilla/good/patterns/challenges/taskthree/service/OrderProcessService.java
+ com.kodilla.good.patterns.challenges.taskthree.service.OrderProcessService
+com/kodilla/good/patterns/challenges/taskfour/data/Flight.java
+ com.kodilla.good.patterns.challenges.taskfour.data.Flight
+com/kodilla/good/patterns/challenges/taskfour/service/FlightFromFinderService.java
+ com.kodilla.good.patterns.challenges.taskfour.service.FlightFromFinderService
+com/kodilla/good/patterns/challenges/taskfour/data/FlightDto.java
+ com.kodilla.good.patterns.challenges.taskfour.data.FlightDto
+com/kodilla/good/patterns/challenges/taskfour/service/ConnectedFlightFinderService.java
+ com.kodilla.good.patterns.challenges.taskfour.service.ConnectedFlightFinderService
+com/kodilla/good/patterns/challenges/taskfour/service/FlightFinderProcessorService.java
+ com.kodilla.good.patterns.challenges.taskfour.service.FlightFinderProcessorService
+com/kodilla/good/patterns/challenges/taskfour/repository/FlightFinderRepository.java
+ com.kodilla.good.patterns.challenges.taskfour.repository.FlightFinderRepository
+com/kodilla/good/patterns/challenges/taskfour/service/FlightToFinderService.java
+ com.kodilla.good.patterns.challenges.taskfour.service.FlightToFinderService
+com/kodilla/good/patterns/challenges/taskfour/service/FlightDataRetriever.java
+ com.kodilla.good.patterns.challenges.taskfour.service.FlightDataRetriever
+com/kodilla/good/patterns/challenges/MainSolid.java
+ com.kodilla.good.patterns.challenges.MainSolid
