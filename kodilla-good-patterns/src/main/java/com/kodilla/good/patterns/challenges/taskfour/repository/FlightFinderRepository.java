@@ -5,5 +5,10 @@ import com.kodilla.good.patterns.challenges.taskfour.data.FlightDto;
 import java.util.List;
 
 public interface FlightFinderRepository {
-    void findFlight(FlightDto flight);
+
+    void findFlightFrom(FlightDto flight);
+
+    void findFlightTo(FlightDto flight);
+
+    void findConnectedFlight(FlightDto flight);
 }

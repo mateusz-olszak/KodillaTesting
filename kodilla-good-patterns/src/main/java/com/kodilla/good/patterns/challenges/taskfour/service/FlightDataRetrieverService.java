@@ -8,8 +8,8 @@ import java.util.List;
 
 public class FlightDataRetrieverService {
     public FlightDto retrieve(){
-        String cityFrom = "Wrocław";
-        String cityTo = "Gdańsk";
+        String cityFrom = "Warszawa";
+        String cityTo = "Wrocław";
         List<Flight> flights = prepareFlights();
 
         return new FlightDto(flights,cityFrom,cityTo);
@@ -23,6 +23,7 @@ public class FlightDataRetrieverService {
         Flight f6 = new Flight("Wrocław", "Kraków");
         Flight f7 = new Flight("Kraków", "Wrocław");
         Flight f8 = new Flight("Gdańsk", "Kraków");
+        Flight f9 = new Flight("Poznań", "Wrocław");
 
         List<Flight> flights = new ArrayList<>();
         flights.add(f1);
@@ -33,6 +34,7 @@ public class FlightDataRetrieverService {
         flights.add(f6);
         flights.add(f7);
         flights.add(f8);
+        flights.add(f9);
 
         return flights;
     }

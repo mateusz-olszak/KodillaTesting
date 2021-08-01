@@ -12,7 +12,9 @@ public class FlightFinderProcessorService {
     }
 
     public void process(FlightDto flight){
-        finderRepository.findFlight(flight);
+        finderRepository.findFlightFrom(flight);
+        finderRepository.findFlightTo(flight);
+        finderRepository.findConnectedFlight(flight);
     }
 
 }

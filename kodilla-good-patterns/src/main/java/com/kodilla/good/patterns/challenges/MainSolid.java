@@ -22,14 +22,8 @@ public class MainSolid {
         FlightDataRetrieverService flightDataRetriever = new FlightDataRetrieverService();
         FlightDto flight = flightDataRetriever.retrieve();
 
-        FlightFinderProcessorService finderProcessorServiceFrom = new FlightFinderProcessorService(new FlightFromFinderService());
+        FlightFinderProcessorService finderProcessorServiceFrom = new FlightFinderProcessorService(new FlightFinderService());
         finderProcessorServiceFrom.process(flight);
-        System.out.println("-----------------------");
-        FlightFinderProcessorService finderProcessorServiceTo = new FlightFinderProcessorService(new FlightToFinderService());
-        finderProcessorServiceTo.process(flight);
-        System.out.println("-----------------------");
-        FlightFinderProcessorService finderProcessorServiceConnected = new FlightFinderProcessorService(new ConnectedFlightFinderService());
-        finderProcessorServiceConnected.process(flight);
 
     }
 }
