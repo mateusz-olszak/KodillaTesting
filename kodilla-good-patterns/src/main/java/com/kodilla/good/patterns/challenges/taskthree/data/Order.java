@@ -1,14 +1,16 @@
 package com.kodilla.good.patterns.challenges.taskthree.data;
 
+import com.kodilla.good.patterns.challenges.taskthree.repository.OrderProcessorRepository;
+
 public class Order {
 
     private Product product;
-    private Supplier supplier;
+    private OrderProcessorRepository orderProcessorRepository;
     private int quantity;
 
-    public Order(Product product, Supplier supplier, int quantity) {
+    public Order(Product product, OrderProcessorRepository orderProcessorRepository, int quantity) {
         this.product = product;
-        this.supplier = supplier;
+        this.orderProcessorRepository = orderProcessorRepository;
         this.quantity = quantity;
     }
 
@@ -16,24 +18,16 @@ public class Order {
         return product;
     }
 
-    public Supplier getSupplier() {
-        return supplier;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public int getTotalPrice(){
-        return quantity*(int)product.getPrice();
+    public OrderProcessorRepository getSupplier() {
+        return orderProcessorRepository;
     }
 
     @Override
     public String toString() {
         return "Order{" +
                 "product=" + product +
-                ", supplier=" + supplier +
                 ", quantity=" + quantity +
+                ", totalPrice=" + quantity*(int)product.getPrice() +
                 '}';
     }
 }

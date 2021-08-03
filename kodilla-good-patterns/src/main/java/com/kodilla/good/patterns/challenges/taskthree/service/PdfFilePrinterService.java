@@ -6,6 +6,6 @@ import com.kodilla.good.patterns.challenges.taskthree.repository.InformationServ
 public class PdfFilePrinterService implements InformationService {
     @Override
     public void printConfirmation(Order order) {
-        System.out.println("Your order: " + order.toString() + " is being printed in pdf file");
+        System.out.println("Your order info: " + order.toString() + " is being printed in pdf file");
     }
 }

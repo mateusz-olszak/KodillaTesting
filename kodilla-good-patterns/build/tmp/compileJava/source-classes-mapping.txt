@@ -1,7 +1,7 @@
-com/kodilla/good/patterns/challenges/taskthree/service/OrderConfirmationService.java
- com.kodilla.good.patterns.challenges.taskthree.service.OrderConfirmationService
 com/kodilla/good/patterns/challenges/tasktwo/service/DataRetrieverService.java
  com.kodilla.good.patterns.challenges.tasktwo.service.DataRetrieverService
+com/kodilla/good/patterns/challenges/tasktwo/service/OrderService.java
+ com.kodilla.good.patterns.challenges.tasktwo.service.OrderService
 com/kodilla/good/patterns/challenges/taskfour/data/FlightDto.java
  com.kodilla.good.patterns.challenges.taskfour.data.FlightDto
 com/kodilla/good/patterns/challenges/taskfour/service/FlightFinderProcessorService.java
@@ -10,59 +10,61 @@ com/kodilla/good/patterns/challenges/taskfour/data/Flight.java
  com.kodilla.good.patterns.challenges.taskfour.data.Flight
 com/kodilla/good/patterns/challenges/taskfour/repository/FlightFinderRepository.java
  com.kodilla.good.patterns.challenges.taskfour.repository.FlightFinderRepository
+com/kodilla/good/patterns/challenges/taskthree/data/Product.java
+ com.kodilla.good.patterns.challenges.taskthree.data.Product
 com/kodilla/good/patterns/challenges/tasktwo/service/ProductOrderService.java
  com.kodilla.good.patterns.challenges.tasktwo.service.ProductOrderService
 com/kodilla/good/patterns/challenges/tasktwo/repository/InformationRepository.java
  com.kodilla.good.patterns.challenges.tasktwo.repository.InformationRepository
-com/kodilla/good/patterns/challenges/taskthree/service/OrderProcessService.java
- com.kodilla.good.patterns.challenges.taskthree.service.OrderProcessService
 com/kodilla/good/patterns/challenges/tasktwo/data/Product.java
  com.kodilla.good.patterns.challenges.tasktwo.data.Product
-com/kodilla/good/patterns/challenges/taskthree/data/SupplierDto.java
- com.kodilla.good.patterns.challenges.taskthree.data.SupplierDto
 com/kodilla/good/patterns/challenges/taskfour/service/FlightDataRetrieverService.java
  com.kodilla.good.patterns.challenges.taskfour.service.FlightDataRetrieverService
+com/kodilla/good/patterns/challenges/taskfirst/MovieStore.java
+ com.kodilla.good.patterns.challenges.taskfirst.MovieStore
 com/kodilla/good/patterns/challenges/tasktwo/repository/OrderDaoRepository.java
  com.kodilla.good.patterns.challenges.tasktwo.repository.OrderDaoRepository
 com/kodilla/good/patterns/challenges/tasktwo/repository/OrderRepository.java
  com.kodilla.good.patterns.challenges.tasktwo.repository.OrderRepository
+com/kodilla/good/patterns/challenges/tasktwo/data/OrderRequest.java
+ com.kodilla.good.patterns.challenges.tasktwo.data.OrderRequest
 com/kodilla/good/patterns/challenges/tasktwo/service/MailService.java
  com.kodilla.good.patterns.challenges.tasktwo.service.MailService
 com/kodilla/good/patterns/challenges/tasktwo/data/User.java
  com.kodilla.good.patterns.challenges.tasktwo.data.User
-com/kodilla/good/patterns/challenges/taskfirst/MovieStore.java
- com.kodilla.good.patterns.challenges.taskfirst.MovieStore
-com/kodilla/good/patterns/challenges/taskthree/service/SupplierDaoService.java
- com.kodilla.good.patterns.challenges.taskthree.service.SupplierDaoService
-com/kodilla/good/patterns/challenges/taskthree/service/CsvFilePrinterService.java
- com.kodilla.good.patterns.challenges.taskthree.service.CsvFilePrinterService
-com/kodilla/good/patterns/challenges/tasktwo/data/OrderDto.java
- com.kodilla.good.patterns.challenges.tasktwo.data.OrderDto
-com/kodilla/good/patterns/challenges/taskthree/repository/SupplierDaoRepository.java
- com.kodilla.good.patterns.challenges.taskthree.repository.SupplierDaoRepository
-com/kodilla/good/patterns/challenges/tasktwo/data/OrderDao.java
- com.kodilla.good.patterns.challenges.tasktwo.data.OrderDao
-com/kodilla/good/patterns/challenges/taskthree/service/DataRetrieverService.java
- com.kodilla.good.patterns.challenges.taskthree.service.DataRetrieverService
-com/kodilla/good/patterns/challenges/taskthree/repository/ShipmentRepository.java
- com.kodilla.good.patterns.challenges.taskthree.repository.ShipmentRepository
-com/kodilla/good/patterns/challenges/taskthree/data/Product.java
- com.kodilla.good.patterns.challenges.taskthree.data.Product
-com/kodilla/good/patterns/challenges/taskthree/data/Order.java
- com.kodilla.good.patterns.challenges.taskthree.data.Order
-com/kodilla/good/patterns/challenges/taskthree/repository/InformationService.java
- com.kodilla.good.patterns.challenges.taskthree.repository.InformationService
-com/kodilla/good/patterns/challenges/taskthree/service/PdfFilePrinterService.java
- com.kodilla.good.patterns.challenges.taskthree.service.PdfFilePrinterService
-com/kodilla/good/patterns/challenges/tasktwo/data/OrderRequest.java
- com.kodilla.good.patterns.challenges.tasktwo.data.OrderRequest
-com/kodilla/good/patterns/challenges/tasktwo/data/Category.java
- com.kodilla.good.patterns.challenges.tasktwo.data.Category
-com/kodilla/good/patterns/challenges/taskthree/data/Supplier.java
- com.kodilla.good.patterns.challenges.taskthree.data.Supplier
-com/kodilla/good/patterns/challenges/tasktwo/service/OrderService.java
- com.kodilla.good.patterns.challenges.tasktwo.service.OrderService
-com/kodilla/good/patterns/challenges/MainSolid.java
- com.kodilla.good.patterns.challenges.MainSolid
 com/kodilla/good/patterns/challenges/taskfour/service/FlightFinderService.java
  com.kodilla.good.patterns.challenges.taskfour.service.FlightFinderService
+com/kodilla/good/patterns/challenges/tasktwo/data/Category.java
+ com.kodilla.good.patterns.challenges.tasktwo.data.Category
+com/kodilla/good/patterns/challenges/tasktwo/data/OrderDto.java
+ com.kodilla.good.patterns.challenges.tasktwo.data.OrderDto
+com/kodilla/good/patterns/challenges/tasktwo/data/OrderDao.java
+ com.kodilla.good.patterns.challenges.tasktwo.data.OrderDao
+com/kodilla/good/patterns/challenges/taskthree/service/OrderProcessorService.java
+ com.kodilla.good.patterns.challenges.taskthree.service.OrderProcessorService
+com/kodilla/good/patterns/challenges/taskthree/suppliers/GlutenFreeShop.java
+ com.kodilla.good.patterns.challenges.taskthree.suppliers.GlutenFreeShop
+com/kodilla/good/patterns/challenges/taskthree/data/OrderDto.java
+ com.kodilla.good.patterns.challenges.taskthree.data.OrderDto
+com/kodilla/good/patterns/challenges/taskthree/repository/OrderProcessorRepository.java
+ com.kodilla.good.patterns.challenges.taskthree.repository.OrderProcessorRepository
+com/kodilla/good/patterns/challenges/taskthree/repository/InformationService.java
+ com.kodilla.good.patterns.challenges.taskthree.repository.InformationService
+com/kodilla/good/patterns/challenges/taskthree/data/Order.java
+ com.kodilla.good.patterns.challenges.taskthree.data.Order
+com/kodilla/good/patterns/challenges/taskthree/service/OrderDaoService.java
+ com.kodilla.good.patterns.challenges.taskthree.service.OrderDaoService
+com/kodilla/good/patterns/challenges/taskthree/repository/OrderDaoRepository.java
+ com.kodilla.good.patterns.challenges.taskthree.repository.OrderDaoRepository
+com/kodilla/good/patterns/challenges/taskthree/suppliers/HealthyShop.java
+ com.kodilla.good.patterns.challenges.taskthree.suppliers.HealthyShop
+com/kodilla/good/patterns/challenges/taskthree/suppliers/ExtraFoodShop.java
+ com.kodilla.good.patterns.challenges.taskthree.suppliers.ExtraFoodShop
+com/kodilla/good/patterns/challenges/taskthree/service/DataRetrieverService.java
+ com.kodilla.good.patterns.challenges.taskthree.service.DataRetrieverService
+com/kodilla/good/patterns/challenges/taskthree/service/CsvFilePrinterService.java
+ com.kodilla.good.patterns.challenges.taskthree.service.CsvFilePrinterService
+com/kodilla/good/patterns/challenges/MainSolid.java
+ com.kodilla.good.patterns.challenges.MainSolid
+com/kodilla/good/patterns/challenges/taskthree/service/PdfFilePrinterService.java
+ com.kodilla.good.patterns.challenges.taskthree.service.PdfFilePrinterService
