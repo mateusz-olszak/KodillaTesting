@@ -1,0 +1,2 @@
+com/kodilla/spring/intro/shape/DrawerTestSuite.java
+ com.kodilla.spring.intro.shape.DrawerTestSuite
