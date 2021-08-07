@@ -12,32 +12,29 @@ public class BoardConfig {
 
     @Autowired
     @Qualifier("toDoList")
-    private TaskList taskList;
+    TaskList taskList;
 
     @Bean
     public Board getBoard(){
-        return new Board(taskList,taskList,taskList);
+        return new Board(taskList);
     }
 
     @Bean(name = "toDoList")
     @Scope("prototype")
     public TaskList getTasksToDo(){
-        taskList = new TaskList("Preparing project architecture");
-        return taskList;
+        return new TaskList("Preparing project architecture");
     }
 
     @Bean(name = "inProgressList")
     @Scope("prototype")
     public TaskList getTasksInProgress(){
-        taskList = new TaskList("Realizing the project");
-        return taskList;
+        return new TaskList("Realizing the project");
     }
 
     @Bean(name = "doneList")
     @Scope("prototype")
     public TaskList getDoneList(){
-        taskList = new TaskList("Realised project");
-        return taskList;
+        return new TaskList("Realised project");
     }
 
 }

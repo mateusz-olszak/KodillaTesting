@@ -12,6 +12,10 @@ public class TaskList {
         tasks.add(task);
     }
 
+    public List<String> getTasks() {
+        return tasks;
+    }
+
     @Override
     public String toString() {
         return "TaskList{" +
