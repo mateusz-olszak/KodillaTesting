@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.singleton.LoggerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-11T08:16:18" hostname="MacBook-Pro-Mateusz.local" time="0.014">
+  <properties/>
+  <testcase name="testAddLog()" classname="com.kodilla.patterns.singleton.LoggerTestSuite" time="0.014"/>
+  <system-out><![CDATA[Log: [opening file]
+Log: [file's settings changed]
+Log: [file' settings saved]
+Log: [closing file]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
