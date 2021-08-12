@@ -34,7 +34,6 @@ public class LoggerTestSuite {
         assertEquals("testLog",log);
     }
 
-
     private static void prepareLogs(){
         logger.log("opening file");
         queue.offer(logger.getLastLog());
