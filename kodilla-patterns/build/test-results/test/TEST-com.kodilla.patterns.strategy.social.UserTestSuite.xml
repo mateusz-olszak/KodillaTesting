@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.strategy.social.UserTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T21:55:12" hostname="MacBook-Pro-Mateusz.local" time="0.022">
+  <properties/>
+  <testcase name="testIndividualSharingStrategies()" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.022"/>
+  <system-out><![CDATA[John's favourite social media: [Facebook] your favourite social media channel is Facebook
+John's new favourite social media: [Snapchat] your favourite social media channel is Snapchat
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
