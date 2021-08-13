@@ -54,3 +54,23 @@ com/kodilla/patterns/strategy/social/SocialPublisher.java
  com.kodilla.patterns.strategy.social.SocialPublisher
 com/kodilla/patterns/strategy/social/users/User.java
  com.kodilla.patterns.strategy.social.users.User
+com/kodilla/patterns/factory/Square.java
+ com.kodilla.patterns.factory.Square
+com/kodilla/patterns/factory/Rectangle.java
+ com.kodilla.patterns.factory.Rectangle
+com/kodilla/patterns/factory/Shape.java
+ com.kodilla.patterns.factory.Shape
+com/kodilla/patterns/factory/Circle.java
+ com.kodilla.patterns.factory.Circle
+com/kodilla/patterns/factory/ShapeFactory.java
+ com.kodilla.patterns.factory.ShapeFactory
+com/kodilla/patterns/factory/tasks/Task.java
+ com.kodilla.patterns.factory.tasks.Task
+com/kodilla/patterns/factory/tasks/ShoppingTask.java
+ com.kodilla.patterns.factory.tasks.ShoppingTask
+com/kodilla/patterns/factory/tasks/TaskFactory.java
+ com.kodilla.patterns.factory.tasks.TaskFactory
+com/kodilla/patterns/factory/tasks/PaintingTask.java
+ com.kodilla.patterns.factory.tasks.PaintingTask
+com/kodilla/patterns/factory/tasks/DrivingTask.java
+ com.kodilla.patterns.factory.tasks.DrivingTask
