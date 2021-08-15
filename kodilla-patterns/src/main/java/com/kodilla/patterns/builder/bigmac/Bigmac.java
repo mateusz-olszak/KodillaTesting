@@ -73,6 +73,10 @@ public class Bigmac {
 
     }
 
+    public List<Ingredients> getIngredients() {
+        return ingredients;
+    }
+
     @Override
     public String toString() {
         return "Bigmac{" +

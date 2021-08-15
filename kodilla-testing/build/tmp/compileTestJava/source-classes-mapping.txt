@@ -15,3 +15,5 @@ com/kodilla/testing/statistics/StatisticsPresentationTestSuite.java
  com.kodilla.testing.statistics.StatisticsPresentationTestSuite
 com/kodilla/testing/library/BookDirectoryTestSuite.java
  com.kodilla.testing.library.BookDirectoryTestSuite
+com/kodilla/testing/loop/testLoopAndConditionalBreakpoints.java
+ com.kodilla.testing.loop.testLoopAndConditionalBreakpoints

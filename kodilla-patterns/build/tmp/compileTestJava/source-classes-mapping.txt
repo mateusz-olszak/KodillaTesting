@@ -20,3 +20,4 @@ com/kodilla/patterns/prototype/BoardTestSuite.java
  com.kodilla.patterns.prototype.BoardTestSuite
 com/kodilla/patterns/builder/bigmac/BigmacTestSuite.java
  com.kodilla.patterns.builder.bigmac.BigmacTestSuite
+ com.kodilla.patterns.builder.bigmac.BigmacTestSuite$1
