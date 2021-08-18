@@ -24,23 +24,26 @@ public class BigmacTestSuite {
 
     @Test
     void testBuildBigmacWithWrongIngredients(){
-        Exception exception = assertThrows(IllegalStateException.class, new Executable() {
-            @Override
-            public void execute() throws Throwable {
-                Bigmac bigmac = new Bigmac.BigmacBuilder()
-                        .bun(Ingredients.SESAME_BUN)
-                        .burger(3)
-                        .sauce(Ingredients.BEKON)
-                        .ingredient(Ingredients.ONION)
-                        .build();
-            }
+//        Exception exception = assertThrows(IllegalStateException.class, new Executable() {
+//            @Override
+//            public void execute() throws Throwable {
+//
+//            }
+//        });
+
+//        String expectedMessage = "Wrong value for sauce";
+//        String actualMessage = exception.getMessage();
+
+//        assertTrue(actualMessage.contains(expectedMessage));
+
+        assertThrows(IllegalStateException.class,() -> {
+            Bigmac bigmac = new Bigmac.BigmacBuilder()
+                    .bun(Ingredients.SESAME_BUN)
+                    .burger(3)
+                    .sauce(Ingredients.BEKON)
+                    .ingredient(Ingredients.ONION)
+                    .build();
         });
-
-        String expectedMessage = "Wrong value for sauce";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
-
     }
 
 }
