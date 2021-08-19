@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.jdbc.DbManagerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-19T22:23:50" hostname="MacBook-Pro-Mateusz.local" time="0.246">
+  <properties/>
+  <testcase name="testSelectUsersAndPosts()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.246"/>
+  <system-out><![CDATA[John Smith
+Zachary Lee
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
