@@ -9,7 +9,7 @@ public class SudokuRow {
     private List<SudokuElement> elements = new ArrayList<>();
 
     public SudokuRow() {
-        for (int i=1; i<=9; i++){
+        for (int i=0; i<9; i++){
             elements.add(new SudokuElement(SudokuElement.EMPTY));
         }
     }

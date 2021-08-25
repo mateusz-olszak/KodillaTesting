@@ -1,16 +1,27 @@
 package com.kodilla.sudoku;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
 public class SudokuElement {
 
     public static final int EMPTY = -1;
-    private List<Integer> possibleFields = List.of(1,2,3,4,5,6,7,8,9);
+    private List<Integer> possibleFields = new ArrayList<>();
     private int value;
 
     public SudokuElement(int value) {
         this.value = value;
+        possibleFields.add(1);
+        possibleFields.add(2);
+        possibleFields.add(3);
+        possibleFields.add(4);
+        possibleFields.add(5);
+        possibleFields.add(6);
+        possibleFields.add(7);
+        possibleFields.add(8);
+        possibleFields.add(9);
     }
 
     public List<Integer> getPossibleFields() {

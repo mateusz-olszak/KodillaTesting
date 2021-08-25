@@ -3,14 +3,15 @@ package com.kodilla.sudoku;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class SudokuBoard extends Prototype<SudokuBoard> {
 
     private List<SudokuRow> row = new ArrayList<>();
+    private List<BackTrack> backTracks = new ArrayList<>();
 
     public SudokuBoard() {
-        for (int i=1; i<=9; i++){
+        for (int i=0; i<9; i++){
             row.add(new SudokuRow());
         }
 //        generateRandomNumbers();
@@ -39,6 +40,14 @@ public class SudokuBoard extends Prototype<SudokuBoard> {
         setElement(8,6,4);
     }
 
+    public void setBackTracks(BackTrack backTrack) {
+        this.backTracks.add(backTrack);
+    }
+
+    public List<SudokuRow> getRow() {
+        return row;
+    }
+
     private void generateRandomNumbers(){
         Random random = new Random();
         for (int i=0; i<40; i++) {
@@ -51,6 +60,7 @@ public class SudokuBoard extends Prototype<SudokuBoard> {
     }
 
     private boolean checkElementCol(int y, int value){
+        row.stream().map(e -> e.getElements().get(y).getPossibleFields().removeIf(n -> n == value));
         return row.stream().anyMatch(e -> e.getElements().get(y).getValue() == value);
     }
 
@@ -60,13 +70,14 @@ public class SudokuBoard extends Prototype<SudokuBoard> {
 
         for (int i = boxRow; i < boxRow+3; i++)
             for (int j = boxCol; j < boxCol+3; j++)
-                if (this.row.get(i).getElements().get(j).getValue() == value)
+                if (this.row.get(i).getElements().get(j).getValue() == value) {
+                    this.row.get(i).getElements().stream().map(e -> e.getPossibleFields().removeIf(n -> n == value));
                     return true;
-
+                }
         return false;
     }
 
-    private boolean isPlaceValid(int x, int y, int val){
+    public boolean isPlaceValid(int x, int y, int val){
         return !checkElementRow(x,val) && !checkElementCol(y,val) && !checkElementBox(x,y,val);
     }
 
@@ -75,19 +86,20 @@ public class SudokuBoard extends Prototype<SudokuBoard> {
             row.get(x).getElements().get(y).setElement(val);
     }
 
-    public boolean runAlgorithm() {
-        for (int x = 0; x < row.size(); x++){
-            for (int y = 0; y < row.get(x).getElements().size(); y++){
+    public boolean runAlgorithm(BackTrack backTrack) {
+        for (int x = 0; x < 9; x++){
+            for (int y = 0; y < 9; y++){
                 if (row.get(x).getElements().get(y).getValue() == SudokuElement.EMPTY){
-                    for (Integer i : row.get(x).getElements().get(y).getPossibleFields()){
+                    for (int i : row.get(x).getElements().get(y).getPossibleFields()){
+//                        if (checkElementRow(x,i)) row.get(x).getElements().get(y).getPossibleFields().remove(i-1);
                         if (isPlaceValid(x,y,i)){
                             row.get(x).getElements().get(y).setElement(i);
 
-                            if (runAlgorithm()) return true;
+                            if (runAlgorithm(backTrack)) return true;
                             row.get(x).getElements().get(y).setElement(SudokuElement.EMPTY);
                         }
                     }
-                        return false;
+                    return false;
                 }
             }
         }
@@ -117,7 +129,6 @@ public class SudokuBoard extends Prototype<SudokuBoard> {
                 result += "  ___________\n";
             result += i+1 + row.get(i).toString().replaceAll(",","");
         }
-
         return result + "\n";
     }
 }

@@ -8,5 +8,7 @@ com/kodilla/sudoku/SudokuMain.java
  com.kodilla.sudoku.SudokuMain
 com/kodilla/sudoku/SudokuBoard.java
  com.kodilla.sudoku.SudokuBoard
+com/kodilla/sudoku/BackTrack.java
+ com.kodilla.sudoku.BackTrack
 com/kodilla/sudoku/SudokuGame.java
  com.kodilla.sudoku.SudokuGame
