@@ -1,14 +1,14 @@
-com/kodilla/sudoku/SudokuRow.java
- com.kodilla.sudoku.SudokuRow
-com/kodilla/sudoku/SudokuElement.java
- com.kodilla.sudoku.SudokuElement
-com/kodilla/sudoku/Prototype.java
- com.kodilla.sudoku.Prototype
-com/kodilla/sudoku/SudokuMain.java
- com.kodilla.sudoku.SudokuMain
 com/kodilla/sudoku/SudokuBoard.java
  com.kodilla.sudoku.SudokuBoard
+com/kodilla/sudoku/SudokuRow.java
+ com.kodilla.sudoku.SudokuRow
+com/kodilla/sudoku/Prototype.java
+ com.kodilla.sudoku.Prototype
 com/kodilla/sudoku/BackTrack.java
  com.kodilla.sudoku.BackTrack
 com/kodilla/sudoku/SudokuGame.java
  com.kodilla.sudoku.SudokuGame
+com/kodilla/sudoku/SudokuElement.java
+ com.kodilla.sudoku.SudokuElement
+com/kodilla/sudoku/SudokuMain.java
+ com.kodilla.sudoku.SudokuMain
