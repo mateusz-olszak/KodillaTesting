@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @SpringBootTest
 public class InoiceDaoTestSuite {
@@ -50,9 +51,8 @@ public class InoiceDaoTestSuite {
         int invoice2Id = invoice2.getId();
         int invoice3Id = invoice3.getId();
 
-        invoiceDao.deleteById(invoiceId);
-        invoiceDao.deleteById(invoice2Id);
-        invoiceDao.deleteById(invoice3Id);
+        invoiceDao.deleteAllById(List.of(invoiceId,invoice2Id,invoice3Id));
+
     }
 
 }

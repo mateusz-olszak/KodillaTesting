@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Triangle Test Unit" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-28T22:58:20" hostname="MacBook-Pro-Mateusz.local" time="0.005">
+  <properties/>
+  <testcase name="testShowFigures()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TriangleTests" time="0.001"/>
+  <testcase name="testRemoveFigure()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TriangleTests" time="0.001"/>
+  <testcase name="testAddFigure()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TriangleTests" time="0.001"/>
+  <testcase name="testGetFigure()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TriangleTests" time="0.001"/>
+  <system-out><![CDATA[Preparing to execute test #5
+Preparing to execute test #6
+Preparing to execute test #7
+Preparing to execute test #8
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

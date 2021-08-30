@@ -1,18 +1,15 @@
 plugins {
-    id 'java'
+	id 'java'
 }
 
-group = 'com.kodilla_course'
+group = 'com.kodilla'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
-    mavenCentral()
-}
-
-dependencies {
+	mavenCentral()
 }
 
 test {
-    useJUnitPlatform()
+	useJUnitPlatform()
 }

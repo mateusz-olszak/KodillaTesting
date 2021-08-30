@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.exception.io.FileReaderTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-28T22:52:04" hostname="MacBook-Pro-Mateusz.local" time="0.023">
+  <properties/>
+  <testcase name="testReadFileWhenNotExists()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.023"/>
+  <system-out><![CDATA[I'am always here
+I'am always here
+Janusz
+Grażyna
+Halina
+Sebastian
+I'am always here
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

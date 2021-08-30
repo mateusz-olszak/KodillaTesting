@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.jdbc.DbManagerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-19T22:23:50" hostname="MacBook-Pro-Mateusz.local" time="0.246">
+<testsuite name="com.kodilla.jdbc.DbManagerTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-28T22:52:44" hostname="MacBook-Pro-Mateusz.local" time="0.392">
   <properties/>
-  <testcase name="testSelectUsersAndPosts()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.246"/>
-  <system-out><![CDATA[John Smith
+  <testcase name="testConnection()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.339"/>
+  <testcase name="testSelectUsers()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.041"/>
+  <testcase name="testSelectUsersAndPosts()" classname="com.kodilla.jdbc.DbManagerTestSuite" time="0.01"/>
+  <system-out><![CDATA[1, John, Smith
+2, Zachary, Lee
+3, Stephanie, Kovalsky
+4, Thomas, Landgren
+5, John, Thomson
+John Smith
 Zachary Lee
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

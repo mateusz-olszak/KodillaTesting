@@ -5,6 +5,11 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedNativeQuery(
+        name = "Company.retrieveCompanyWithName",
+        query = "SELECT * FROM COMPANIES WHERE REGEXP_LIKE(COMPANIES.COMPANY_NAME, ?1)",
+        resultClass = Company.class
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-06-15T11:37:45" hostname="192.168.1.23" time="0.677">
+<testsuite name="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-08-28T22:58:19" hostname="MacBook-Pro-Mateusz.local" time="0.59">
   <properties/>
-  <testcase name="testCountPostsOf1000()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.633"/>
-  <testcase name="testCommentsLessThanPosts()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.007"/>
-  <testcase name="testCommentsMoreThanPosts()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.006"/>
-  <testcase name="testCountCommentsOf0()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.003"/>
-  <testcase name="testCountUsersOf0()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.004"/>
-  <testcase name="testCountPostsOf0()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.005"/>
-  <testcase name="testCountUsersOf100()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.012"/>
+  <testcase name="testCountPostsOf1000()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.573"/>
+  <testcase name="testCommentsLessThanPosts()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.004"/>
+  <testcase name="testCommentsMoreThanPosts()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.003"/>
+  <testcase name="testCountCommentsOf0()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.001"/>
+  <testcase name="testCountUsersOf0()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.001"/>
+  <testcase name="testCountPostsOf0()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.001"/>
+  <testcase name="testCountUsersOf100()" classname="com.kodilla.testing.statistics.StatisticsPresentationTestSuite" time="0.004"/>
   <system-out><![CDATA[TestSuite: start
 Statistic for average posts per user: 1.1666666666666667
 Statistic for average comments per user: 1.8333333333333333

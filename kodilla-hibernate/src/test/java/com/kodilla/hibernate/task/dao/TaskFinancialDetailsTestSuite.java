@@ -34,9 +34,4 @@ public class TaskFinancialDetailsTestSuite {
         taskFinancialRepo.deleteById(id);
     }
 
-    @Test
-    void testDeleteAll(){
-        taskFinancialRepo.deleteAll();
-    }
-
 }
