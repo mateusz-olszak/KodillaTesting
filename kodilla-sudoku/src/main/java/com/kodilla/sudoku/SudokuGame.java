@@ -1,44 +1,35 @@
 package com.kodilla.sudoku;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 public class SudokuGame {
 
     private final SudokuBoard sudokuBoard = new SudokuBoard();
 
     public void play(){
+        String solved;
         System.out.println(sudokuBoard);
-        sudokuBoard.runAlgorithm();
+        if (runAlgorithm()) solved = "Sudoku solved successfully!";
+        else solved = "Cannot solve sudoku";
         System.out.println(sudokuBoard);
-        System.out.println("############");
+        System.out.println(solved);
+    }
 
+    private boolean runAlgorithm() {
+        for (int x=0; x < 9; x++){
+            for (int y=0; y < 9; y++){
+                if (sudokuBoard.getRow().get(x).getElements().get(y).getValue() == SudokuElement.EMPTY){
+                    for (int i=1; i<=9; i++){
+                        if (sudokuBoard.isPlaceValid(x,y,i)){
+                            sudokuBoard.getRow().get(x).getElements().get(y).putElement(i);
 
-        int counter = 0;
-        for (int i=0; i<9; i++){
-            for (int j=0; j<9; j++){
-                counter += sudokuBoard.getRow().get(i).getElements().get(j).getPossibleFields().size();
+                            if (runAlgorithm()) return true;
+                            else sudokuBoard.getRow().get(x).getElements().get(y).putElement(SudokuElement.EMPTY);
+                        }
+                    }
+                    return false;
+                }
             }
         }
-        System.out.println(counter);
 
+        return true;
     }
-
-    private void askCoordinates(){
-
-        Scanner scanner = new Scanner(System.in);
-        String SUDOKU = "SUDOKU";
-        System.out.print("Enter coordinates(row,col,val): ");
-        String sudoku; int x,y,val;
-        sudoku = scanner.nextLine().toUpperCase(Locale.ROOT);
-        if (sudoku.equals(SUDOKU))
-            sudokuBoard.runAlgorithm();
-        else {
-            x = Character.getNumericValue(sudoku.charAt(0));
-            y = Character.getNumericValue(sudoku.charAt(2));
-            val = Character.getNumericValue(sudoku.charAt(4));
-            sudokuBoard.setElement(x-1,y-1,val);
-        }
-    }
-
 }
