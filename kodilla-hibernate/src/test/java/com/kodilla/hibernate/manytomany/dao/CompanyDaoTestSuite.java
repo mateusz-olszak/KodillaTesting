@@ -5,13 +5,14 @@ import com.kodilla.hibernate.manytomany.Employee;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
+import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
 public class CompanyDaoTestSuite {
 
     @Autowired
@@ -21,14 +22,15 @@ public class CompanyDaoTestSuite {
     private EmployeeDao employeeDao;
 
     @Test
-    void testSaveMayToMany(){
-        Employee johnSmith = new Employee("John","Smith");
-        Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
-        Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
-
+    void testSaveManyToMany(){
         Company softwareMachine = new Company("Software Machine");
         Company dataMaesters = new Company("Data Maesters");
         Company greyMatter = new Company("Grey Matter");
+
+
+        Employee johnSmith = new Employee("John","Smith");
+        Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
+        Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
 
         softwareMachine.getEmployees().add(johnSmith);
         dataMaesters.getEmployees().add(stephanieClarckson);
@@ -54,18 +56,14 @@ public class CompanyDaoTestSuite {
         assertEquals(3,dataMaestersId);
 
 
-        try {
-            companyDao.deleteById(softwareMachineId);
-            companyDao.deleteById(dataMaestersId);
-            companyDao.deleteById(greyMatterId);
-        } catch (Exception e) {
-            //do nothing
-        }
+        companyDao.delete(softwareMachine);
+        companyDao.delete(greyMatter);
+        companyDao.delete(dataMaesters);
     }
 
     @Test
     void testFindEmployeeWithLastname(){
-        Employee johnSmith = new Employee("John","Smith");
+        Employee johnSmith = new Employee("John","Bone");
         Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
         Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
 
@@ -89,27 +87,25 @@ public class CompanyDaoTestSuite {
         companyDao.save(dataMaesters);
         companyDao.save(greyMatter);
 
-        List<Employee> employeeList = employeeDao.retrieveEmployeeWithLastname("Smith");
+        List<Employee> employeeList = employeeDao.retrieveEmployeeWithLastname("Bone");
 
-        try {
-            assertEquals(1,employeeList.size());
-        }finally {
-            companyDao.delete(softwareMachine);
-            companyDao.delete(greyMatter);
-            companyDao.delete(dataMaesters);
-        }
+        assertEquals(1,employeeList.size());
+
+        companyDao.delete(softwareMachine);
+        companyDao.delete(greyMatter);
+        companyDao.delete(dataMaesters);
     }
 
 
     @Test
     void testFindCompanyWithName(){
-        Employee johnSmith = new Employee("John","Smith");
-        Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
-        Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
-
         Company softwareMachine = new Company("Software Machine");
         Company dataMaesters = new Company("Data Maesters");
         Company greyMatter = new Company("Grey Matter");
+
+        Employee johnSmith = new Employee("John","Smith");
+        Employee stephanieClarckson = new Employee("Stephanie", "Clarckson");
+        Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
 
         softwareMachine.getEmployees().add(johnSmith);
         dataMaesters.getEmployees().add(stephanieClarckson);
@@ -136,16 +132,13 @@ public class CompanyDaoTestSuite {
 
         List<Company> companies = companyDao.retrieveCompanyWithName("Sof");
 
-        try {
-            assertEquals(1,companies.size());
-            assertEquals(1,softwareMachineId);
-            assertEquals(2,greyMatterId);
-            assertEquals(3,dataMaestersId);
-        }finally {
-            companyDao.delete(softwareMachine);
-            companyDao.delete(dataMaesters);
-            companyDao.delete(greyMatter);
-        }
+        assertEquals(1,companies.size());
+        assertEquals(1,softwareMachineId);
+        assertEquals(2,greyMatterId);
+        assertEquals(3,dataMaestersId);
 
+        companyDao.delete(softwareMachine);
+        companyDao.delete(dataMaesters);
+        companyDao.delete(greyMatter);
     }
 }

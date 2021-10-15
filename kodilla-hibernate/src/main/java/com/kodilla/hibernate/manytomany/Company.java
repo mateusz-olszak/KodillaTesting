@@ -10,6 +10,10 @@ import java.util.List;
         query = "SELECT * FROM COMPANIES WHERE REGEXP_LIKE(COMPANIES.COMPANY_NAME, ?1)",
         resultClass = Company.class
 )
+@NamedQuery(
+        name = "Company.retrieveCompaniesWithGivenNameRegex",
+        query = "FROM Company WHERE name LIKE concat('%',concat(:name,'%'))"
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {

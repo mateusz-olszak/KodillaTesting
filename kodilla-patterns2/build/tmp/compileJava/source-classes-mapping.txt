@@ -1,0 +1,20 @@
+com/kodilla/patterns2/KodillaApplication.java
+ com.kodilla.patterns2.KodillaApplication
+com/kodilla/patterns2/facade/Authenticator.java
+ com.kodilla.patterns2.facade.Authenticator
+com/kodilla/patterns2/facade/Item.java
+ com.kodilla.patterns2.facade.Item
+com/kodilla/patterns2/facade/ShopService.java
+ com.kodilla.patterns2.facade.ShopService
+com/kodilla/patterns2/facade/ProductService.java
+ com.kodilla.patterns2.facade.ProductService
+com/kodilla/patterns2/facade/Order.java
+ com.kodilla.patterns2.facade.Order
+com/kodilla/patterns2/facade/api/OrderDto.java
+ com.kodilla.patterns2.facade.api.OrderDto
+com/kodilla/patterns2/facade/api/OrderProcessingException.java
+ com.kodilla.patterns2.facade.api.OrderProcessingException
+com/kodilla/patterns2/facade/api/OrderFacade.java
+ com.kodilla.patterns2.facade.api.OrderFacade
+com/kodilla/patterns2/facade/api/ItemDto.java
+ com.kodilla.patterns2.facade.api.ItemDto

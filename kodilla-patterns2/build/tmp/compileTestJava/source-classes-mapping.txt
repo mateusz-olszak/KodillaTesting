@@ -1,0 +1,4 @@
+com/kodilla/patterns2/KodillaTestApplication.java
+ com.kodilla.patterns2.KodillaTestApplication
+com/kodilla/patterns2/facade/ShopServiceTestSuite.java
+ com.kodilla.patterns2.facade.ShopServiceTestSuite
