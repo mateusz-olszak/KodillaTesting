@@ -1,4 +1,14 @@
+com/kodilla/patterns2/decorator/pizza/PizzaOrderTestSuite.java
+ com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite
 com/kodilla/patterns2/KodillaTestApplication.java
  com.kodilla.patterns2.KodillaTestApplication
+com/kodilla/patterns2/aop/calculator/CalculatorTestSuite.java
+ com.kodilla.patterns2.aop.calculator.CalculatorTestSuite
+com/kodilla/patterns2/decorator/taxiportal/TaxiOrderTestSuite.java
+ com.kodilla.patterns2.decorator.taxiportal.TaxiOrderTestSuite
 com/kodilla/patterns2/facade/ShopServiceTestSuite.java
  com.kodilla.patterns2.facade.ShopServiceTestSuite
+com/kodilla/patterns2/facade/AspectOrderFacadeTestSuite.java
+ com.kodilla.patterns2.facade.AspectOrderFacadeTestSuite
+com/kodilla/patterns2/aop/calculator/Watcher.java
+ com.kodilla.patterns2.aop.calculator.Watcher

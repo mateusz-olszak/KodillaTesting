@@ -1,20 +1,54 @@
-com/kodilla/patterns2/KodillaApplication.java
- com.kodilla.patterns2.KodillaApplication
-com/kodilla/patterns2/facade/Authenticator.java
- com.kodilla.patterns2.facade.Authenticator
 com/kodilla/patterns2/facade/Item.java
  com.kodilla.patterns2.facade.Item
-com/kodilla/patterns2/facade/ShopService.java
- com.kodilla.patterns2.facade.ShopService
-com/kodilla/patterns2/facade/ProductService.java
- com.kodilla.patterns2.facade.ProductService
-com/kodilla/patterns2/facade/Order.java
- com.kodilla.patterns2.facade.Order
+com/kodilla/patterns2/decorator/taxiportal/MyTaxiNetworkOrderDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.MyTaxiNetworkOrderDecorator
+com/kodilla/patterns2/decorator/taxiportal/TaxiNetworkOrderDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.TaxiNetworkOrderDecorator
+com/kodilla/patterns2/decorator/taxiportal/UberNetworkOrderDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.UberNetworkOrderDecorator
+com/kodilla/patterns2/decorator/pizza/ExtraSauceDecorator.java
+ com.kodilla.patterns2.decorator.pizza.ExtraSauceDecorator
+com/kodilla/patterns2/decorator/taxiportal/BasicTaxiOrder.java
+ com.kodilla.patterns2.decorator.taxiportal.BasicTaxiOrder
+com/kodilla/patterns2/decorator/pizza/BasicPizzaDelegat.java
+ com.kodilla.patterns2.decorator.pizza.BasicPizzaDelegat
 com/kodilla/patterns2/facade/api/OrderDto.java
  com.kodilla.patterns2.facade.api.OrderDto
+com/kodilla/patterns2/decorator/pizza/PizzaNeapolitanianDecorator.java
+ com.kodilla.patterns2.decorator.pizza.PizzaNeapolitanianDecorator
+com/kodilla/patterns2/decorator/taxiportal/AbstractTaxiOrderDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.AbstractTaxiOrderDecorator
+com/kodilla/patterns2/decorator/taxiportal/ExpresseDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.ExpresseDecorator
+com/kodilla/patterns2/decorator/pizza/AbstractPizzaDecorator.java
+ com.kodilla.patterns2.decorator.pizza.AbstractPizzaDecorator
+com/kodilla/patterns2/decorator/taxiportal/VipCarDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.VipCarDecorator
+com/kodilla/patterns2/KodillaApplication.java
+ com.kodilla.patterns2.KodillaApplication
+com/kodilla/patterns2/decorator/pizza/ThinCrustPizzaDecorator.java
+ com.kodilla.patterns2.decorator.pizza.ThinCrustPizzaDecorator
+com/kodilla/patterns2/facade/Order.java
+ com.kodilla.patterns2.facade.Order
+com/kodilla/patterns2/facade/ProductService.java
+ com.kodilla.patterns2.facade.ProductService
 com/kodilla/patterns2/facade/api/OrderProcessingException.java
  com.kodilla.patterns2.facade.api.OrderProcessingException
-com/kodilla/patterns2/facade/api/OrderFacade.java
- com.kodilla.patterns2.facade.api.OrderFacade
+com/kodilla/patterns2/aop/calculator/Calculator.java
+ com.kodilla.patterns2.aop.calculator.Calculator
+com/kodilla/patterns2/decorator/taxiportal/ChildSeatDecorator.java
+ com.kodilla.patterns2.decorator.taxiportal.ChildSeatDecorator
 com/kodilla/patterns2/facade/api/ItemDto.java
  com.kodilla.patterns2.facade.api.ItemDto
+com/kodilla/patterns2/decorator/taxiportal/TaxiOrder.java
+ com.kodilla.patterns2.decorator.taxiportal.TaxiOrder
+com/kodilla/patterns2/decorator/pizza/PizzaOrder.java
+ com.kodilla.patterns2.decorator.pizza.PizzaOrder
+com/kodilla/patterns2/decorator/pizza/PizzaCapricciosaDecorator.java
+ com.kodilla.patterns2.decorator.pizza.PizzaCapricciosaDecorator
+com/kodilla/patterns2/facade/ShopService.java
+ com.kodilla.patterns2.facade.ShopService
+com/kodilla/patterns2/facade/Authenticator.java
+ com.kodilla.patterns2.facade.Authenticator
+com/kodilla/patterns2/facade/api/OrderFacade.java
+ com.kodilla.patterns2.facade.api.OrderFacade
