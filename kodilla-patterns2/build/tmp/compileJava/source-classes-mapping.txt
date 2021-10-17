@@ -52,3 +52,55 @@ com/kodilla/patterns2/facade/Authenticator.java
  com.kodilla.patterns2.facade.Authenticator
 com/kodilla/patterns2/facade/api/OrderFacade.java
  com.kodilla.patterns2.facade.api.OrderFacade
+com/kodilla/patterns2/observer/forum/JavaHelpForumTopic.java
+ com.kodilla.patterns2.observer.forum.JavaHelpForumTopic
+com/kodilla/patterns2/observer/forum/JavaToolsForumTopic.java
+ com.kodilla.patterns2.observer.forum.JavaToolsForumTopic
+com/kodilla/patterns2/observer/forum/ForumTopic.java
+ com.kodilla.patterns2.observer.forum.ForumTopic
+com/kodilla/patterns2/observer/forum/ForumObservable.java
+ com.kodilla.patterns2.observer.forum.ForumObservable
+com/kodilla/patterns2/observer/forum/ForumUser.java
+ com.kodilla.patterns2.observer.forum.ForumUser
+com/kodilla/patterns2/observer/homework/Task.java
+ com.kodilla.patterns2.observer.homework.Task
+com/kodilla/patterns2/observer/forum/ForumObserver.java
+ com.kodilla.patterns2.observer.forum.ForumObserver
+com/kodilla/patterns2/observer/homework/Mentor.java
+ com.kodilla.patterns2.observer.homework.Mentor
+com/kodilla/patterns2/observer/homework/Student.java
+ com.kodilla.patterns2.observer.homework.Student
+com/kodilla/patterns2/observer/homework/HomeworkObserver.java
+ com.kodilla.patterns2.observer.homework.HomeworkObserver
+com/kodilla/patterns2/observer/homework/HomeworkObservable.java
+ com.kodilla.patterns2.observer.homework.HomeworkObservable
+com/kodilla/patterns2/adapter/company/oldhrsys/Workers.java
+ com.kodilla.patterns2.adapter.company.oldhrsys.Workers
+com/kodilla/patterns2/adapter/company/newhrsys/SalaryAdaptee.java
+ com.kodilla.patterns2.adapter.company.newhrsys.SalaryAdaptee
+com/kodilla/patterns2/adapter/company/newhrsys/SalaryAdapter.java
+ com.kodilla.patterns2.adapter.company.newhrsys.SalaryAdapter
+com/kodilla/patterns2/adapter/company/newhrsys/CompanySalaryProcessor.java
+ com.kodilla.patterns2.adapter.company.newhrsys.CompanySalaryProcessor
+com/kodilla/patterns2/adapter/company/newhrsys/Employee.java
+ com.kodilla.patterns2.adapter.company.newhrsys.Employee
+com/kodilla/patterns2/adapter/company/oldhrsys/SalaryCalculator.java
+ com.kodilla.patterns2.adapter.company.oldhrsys.SalaryCalculator
+com/kodilla/patterns2/adapter/company/newhrsys/SalaryProcessor.java
+ com.kodilla.patterns2.adapter.company.newhrsys.SalaryProcessor
+com/kodilla/patterns2/adapter/bookclasifier/librarya/Book.java
+ com.kodilla.patterns2.adapter.bookclasifier.librarya.Book
+com/kodilla/patterns2/adapter/bookclasifier/libraryb/Book.java
+ com.kodilla.patterns2.adapter.bookclasifier.libraryb.Book
+com/kodilla/patterns2/adapter/bookclasifier/libraryb/BookSignature.java
+ com.kodilla.patterns2.adapter.bookclasifier.libraryb.BookSignature
+com/kodilla/patterns2/adapter/bookclasifier/libraryb/BookStatistics.java
+ com.kodilla.patterns2.adapter.bookclasifier.libraryb.BookStatistics
+com/kodilla/patterns2/adapter/bookclasifier/librarya/Classifier.java
+ com.kodilla.patterns2.adapter.bookclasifier.librarya.Classifier
+com/kodilla/patterns2/adapter/bookclasifier/libraryb/MedianAdapter.java
+ com.kodilla.patterns2.adapter.bookclasifier.libraryb.MedianAdapter
+com/kodilla/patterns2/adapter/bookclasifier/libraryb/MedianAdaptee.java
+ com.kodilla.patterns2.adapter.bookclasifier.libraryb.MedianAdaptee
+com/kodilla/patterns2/adapter/bookclasifier/libraryb/Statistics.java
+ com.kodilla.patterns2.adapter.bookclasifier.libraryb.Statistics
