@@ -10,13 +10,11 @@ com/kodilla/patterns2/facade/ShopServiceTestSuite.java
  com.kodilla.patterns2.facade.ShopServiceTestSuite
 com/kodilla/patterns2/facade/AspectOrderFacadeTestSuite.java
  com.kodilla.patterns2.facade.AspectOrderFacadeTestSuite
-com/kodilla/patterns2/aop/calculator/Watcher.java
- com.kodilla.patterns2.aop.calculator.Watcher
+com/kodilla/patterns2/adapter/classifier/MedianAdapterTestSuite.java
+ com.kodilla.patterns2.adapter.classifier.MedianAdapterTestSuite
 com/kodilla/patterns2/observer/forum/ForumTopicTestSuite.java
  com.kodilla.patterns2.observer.forum.ForumTopicTestSuite
 com/kodilla/patterns2/observer/homework/HomeworkTestSuite.java
  com.kodilla.patterns2.observer.homework.HomeworkTestSuite
 com/kodilla/patterns2/adapter/company/SalaryAdapterTestSuite.java
  com.kodilla.patterns2.adapter.company.SalaryAdapterTestSuite
-com/kodilla/patterns2/adapter/classifier/MedianAdapterTestSuite.java
- com.kodilla.patterns2.adapter.classifier.MedianAdapterTestSuite

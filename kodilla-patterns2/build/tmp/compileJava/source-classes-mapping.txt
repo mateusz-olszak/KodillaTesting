@@ -104,3 +104,5 @@ com/kodilla/patterns2/adapter/bookclasifier/libraryb/MedianAdaptee.java
  com.kodilla.patterns2.adapter.bookclasifier.libraryb.MedianAdaptee
 com/kodilla/patterns2/adapter/bookclasifier/libraryb/Statistics.java
  com.kodilla.patterns2.adapter.bookclasifier.libraryb.Statistics
+com/kodilla/patterns2/aop/calculator/Watcher.java
+ com.kodilla.patterns2.aop.calculator.Watcher
