@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class DbManagerTestSuite {
 
     @Test
-    void testConnection(){
+    void testConnection() throws SQLException {
         DbManager dbManager = DbManager.getInstance();
 
         assertNotNull(dbManager.getConnection());
@@ -20,7 +20,7 @@ public class DbManagerTestSuite {
 
     @Test
     void testSelectUsers() throws SQLException {
-        DbManager dbManager = DbManager.INSTANCE;
+        DbManager dbManager = DbManager.getInstance();
 
         String sqlQuery = "SELECT * FROM USERS";
         Statement statement = dbManager.getConnection().createStatement();
@@ -40,7 +40,7 @@ public class DbManagerTestSuite {
 
     @Test
     void testSelectUsersAndPosts() throws SQLException {
-        DbManager dbManager = DbManager.INSTANCE;
+        DbManager dbManager = DbManager.getInstance();
 
         String sqlQuery = "SELECT U.FIRSTNAME, U.LASTNAME\n" +
                 "FROM USERS U JOIN POSTS P ON U.ID = P.USER_ID\n" +

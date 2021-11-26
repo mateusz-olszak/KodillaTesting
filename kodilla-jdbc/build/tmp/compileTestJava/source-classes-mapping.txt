@@ -1,2 +1,4 @@
 com/kodilla/jdbc/DbManagerTestSuite.java
  com.kodilla.jdbc.DbManagerTestSuite
+com/kodilla/jdbc/StoredProcTestSuite.java
+ com.kodilla.jdbc.StoredProcTestSuite
