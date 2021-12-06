@@ -1,0 +1,6 @@
+com/kodilla/testing2/google/GoogleTestingApp.java
+ com.kodilla.testing2.google.GoogleTestingApp
+com/kodilla/testing2/google/config/WebDriverConfig.java
+ com.kodilla.testing2.google.config.WebDriverConfig
+com/kodilla/testing2/ebay/EbayTestingApp.java
+ com.kodilla.testing2.ebay.EbayTestingApp
